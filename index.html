@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JS Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="calculator">Calculator
+	<i><b> freecodecamp</b> CASIO</i>
+	<form>
+		<input type="text" placeholder='0' id="displayScreen" disabled>
+		<br>
+ 
+	    <input type="button" value="C" class="keys redKeys" onclick="clrscr()">
+		<input type="button" value="<-" class="keys" onclick="backspace()">
+	    <input type="button" value="/" class="keys" onclick="toScreen('/')">
+		<input type="button" value="*" class="keys" onclick="toScreen('*')">
+		
+		<input type="button" value="7" class="keys" onclick="toScreen('7')">
+		<input type="button" value="8" class="keys" onclick="toScreen('8')">
+		<input type="button" value="9" class="keys" onclick="toScreen('9')">
+		<input type="button" value="-" class="keys" onclick="toScreen('-')">
+
+	<div class="abc">
+		<input type="button" value="4" class="keys" onclick="toScreen('4')">
+		<input type="button" value="5" class="keys" onclick="toScreen('5')">
+		<input type="button" value="6" class="keys" onclick="toScreen('6')">
+	</div>
+    <div class="abc">
+		<input type="button" value="1" class="keys" onclick="toScreen('1')">
+		<input type="button" value="2" class="keys" onclick="toScreen('2')">
+		<input type="button" value="3" class="keys" onclick="toScreen('3')">
+    </div>
+    
+    <div class="abd">
+		<input type="button" value="0" class="keys" onclick="toScreen('0')">
+		<input type="button" value="." class="keys" onclick="toScreen('.')">
+		<input type="button" value="=" class="horizontalKeys" onclick="answer()">
+    </div>
+    <div class="abs">
+		<input type="button" value="+" class="verticalKeys" onclick="toScreen('+')">
+    </div>
+	</form>
+</div>
+<script type="text/javascript" src ="script.js"></script>
+</body>
+</html>
